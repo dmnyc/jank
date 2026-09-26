@@ -1188,6 +1188,23 @@ export default {
       'Your list changed since this review, so the changes above now compare against the newest version. Check them and restore again.',
     'No profile fields would change.': 'No profile fields would change.',
     'If another client clobbered your follows, mutes, profile, or bookmarks, scan relay history to find and restore an older version':
-      'If another client clobbered your follows, mutes, profile, or bookmarks, scan relay history to find and restore an older version'
+      'If another client clobbered your follows, mutes, profile, or bookmarks, scan relay history to find and restore an older version',
+    'Could not reach your write relays to confirm the current version. Nothing was published.':
+      'Could not reach your write relays to confirm the current version. Nothing was published.',
+    '{{answered}} of {{queried}} relays answered': '{{answered}} of {{queried}} relays answered',
+    Answered: 'Answered',
+    Failed: 'Failed',
+    'Timed out': 'Timed out',
+    'No relay finished answering, so these versions may be incomplete. Scan again to retry.':
+      'No relay finished answering, so these versions may be incomplete. Scan again to retry.',
+    'Could not fetch your relay list, so the newest version found may not be current and nothing is recommended. Scan again to retry.':
+      'Could not fetch your relay list, so the newest version found may not be current and nothing is recommended. Scan again to retry.',
+    'None of your write relays answered, so the newest version found may not be current and nothing is recommended. Scan again to retry.':
+      'None of your write relays answered, so the newest version found may not be current and nothing is recommended. Scan again to retry.',
+    'No relay list found for this account, so the default relays stand in as its write relays.':
+      'No relay list found for this account, so the default relays stand in as its write relays.',
+    'No versions found. The relays that answered may have no history of this list.':
+      'No versions found. The relays that answered may have no history of this list.',
+    'No recoverable improvement found.': 'No recoverable improvement found.'
   }
 }
