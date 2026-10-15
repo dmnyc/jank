@@ -12,6 +12,7 @@ import {
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Checkbox } from '@/components/ui/checkbox'
+import LazarusLetterforms from '@/components/LazarusLetterforms'
 import {
   Dialog,
   DialogContent,
@@ -672,7 +673,14 @@ const LazarusSettingsPage = forwardRef(({ index }: { index?: number }, ref) => {
 
   if (!pubkey) {
     return (
-      <SecondaryPageLayout ref={ref} index={index} title={t('Data recovery')}>
+      <SecondaryPageLayout
+        ref={ref}
+        index={index}
+        title={t('Data recovery')}
+        controls={
+          <LazarusLetterforms height={20} className="me-2 h-5! w-auto! text-primary/60" />
+        }
+      >
         <p className="text-muted-foreground mt-3 px-4 text-sm">
           {t('Sign in to scan your relay history for lost data.')}
         </p>
@@ -681,12 +689,31 @@ const LazarusSettingsPage = forwardRef(({ index }: { index?: number }, ref) => {
   }
 
   return (
-    <SecondaryPageLayout ref={ref} index={index} title={t('Data recovery')}>
+    <SecondaryPageLayout
+      ref={ref}
+      index={index}
+      title={t('Data recovery')}
+      controls={
+        <LazarusLetterforms height={20} className="me-2 h-5! w-auto! text-primary/60" />
+      }
+    >
       <div className="mt-3 space-y-3 pb-4">
         <p className="text-muted-foreground px-4 text-sm">
           {t(
             'Scan your relays for older versions of your lists and profiles, and restore one if a client clobbered it. Scans are read-only. Nothing is published until you review the change and confirm.'
           )}
+        </p>
+        <p className="text-muted-foreground mt-2 px-4 text-sm">
+          {t('Follows the')}{' '}
+          <a
+            href="https://github.com/dmnyc/lazarus"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary font-medium hover:underline"
+          >
+            Lazarus
+          </a>{' '}
+          {t('recovery spec (0.6.2-draft).')}
         </p>
         {usesRemoteSigner && (
           <div className="text-muted-foreground mx-4 flex items-start gap-2 rounded-md border p-2 text-xs">

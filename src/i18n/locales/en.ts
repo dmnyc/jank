@@ -1214,6 +1214,8 @@ export default {
     'Your current version lists keys that clients encrypt direct messages to.':
       'Your current version lists keys that clients encrypt direct messages to.',
     'I intend this change': 'I intend this change',
-    'I understand this can remove items I have now': 'I understand this can remove items I have now'
+    'I understand this can remove items I have now': 'I understand this can remove items I have now',
+    'Follows the': 'Follows the',
+    'recovery spec (0.6.2-draft).': 'recovery spec (0.6.2-draft).'
   }
 }
